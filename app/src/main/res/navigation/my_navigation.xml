@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="id.mario.storemarketplace.ui.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_detailProductFragment"
             app:destination="@id/detailProductFragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/detailProductFragment"
         android:name="id.mario.storemarketplace.ui.fragment.DetailProductFragment"
         android:label="fragment_detail_product"
-        tools:layout="@layout/fragment_detail_product" >
+        tools:layout="@layout/fragment_detail_product">
         <argument
             android:name="productitem"
             app:argType="id.mario.core.model.ProductsItemsModel" />
@@ -28,4 +28,11 @@
         android:name="id.mario.storemarketplace.ui.fragment.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
+
+    <dialog
+        android:id="@+id/profileBottomSheetFragment"
+        android:name="id.mario.storemarketplace.ui.bottomsheet.ProfileBottomSheetFragment"
+        android:label="fragment_profile_bottom_sheet"
+        tools:layout="@layout/fragment_profile_bottom_sheet" />
+
 </navigation>

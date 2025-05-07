@@ -3,9 +3,14 @@
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home_main_menu"
-        android:title="Products" />
+        android:title="Home" />
     <item
         android:id="@+id/cartFragment"
         android:icon="@drawable/ic_cart_main_menu"
         android:title="Cart" />
+
+    <item
+        android:id="@+id/profileBottomSheetFragment"
+        android:icon="@drawable/ic_account_profile"
+        android:title="Profile" />
 </menu>

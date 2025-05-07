@@ -12,7 +12,7 @@ import id.mario.storemarketplace.R
 import id.mario.storemarketplace.databinding.ItemProductHomeBinding
 import id.mario.storemarketplace.ui.fragment.HomeFragmentDirections
 
-class ProductMarketAdapter :RecyclerView.Adapter<ProductMarketAdapter.MyViewHolder>() {
+class ProductMarketAdapter : RecyclerView.Adapter<ProductMarketAdapter.MyViewHolder>() {
     private val diffCallBack = object : DiffUtil.ItemCallback<ProductsItemsModel>() {
         override fun areItemsTheSame(
             oldItem: ProductsItemsModel,
@@ -38,7 +38,8 @@ class ProductMarketAdapter :RecyclerView.Adapter<ProductMarketAdapter.MyViewHold
                 tvNameCategory.text = data.category
                 ivProduct.loadImage(data.image)
                 root.setOnClickListener {
-                    val directions = HomeFragmentDirections.actionHomeFragmentToDetailProductFragment(data)
+                    val directions =
+                        HomeFragmentDirections.actionHomeFragmentToDetailProductFragment(data)
                     it.findNavController().navigate(directions)
                 }
             }
